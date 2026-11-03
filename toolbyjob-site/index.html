@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolByJob – Find the Right AI Tool for Every Job</title>
+  <meta name="description" content="Tell us what you want to do. We recommend the best AI tools for content creators, solopreneurs and small businesses – with real use cases. Free AI tool directory by job.">
+  <meta name="keywords" content="AI tools, AI directory, best AI tools, AI for content creators, AI for small business, use case AI, ToolByJob">
+  <meta name="author" content="ToolByJob">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolbyjob.site/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolbyjob.site/">
+  <meta property="og:title" content="ToolByJob – Find the Right AI Tool for Every Job">
+  <meta property="og:description" content="Tell us the job. Get the best AI tools for content creators, solopreneurs and small businesses – with real use cases.">
+  <meta property="og:image" content="https://toolbyjob.site/og-image.png">
+  <meta property="og:site_name" content="ToolByJob">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ToolByJob – Find the Right AI Tool for Every Job">
+  <meta name="twitter:description" content="Tell us the job. Get the best AI tools with real use cases.">
+  <meta name="twitter:image" content="https://toolbyjob.site/og-image.png">
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ToolByJob",
+    "url": "https://toolbyjob.site/",
+    "description": "AI tool directory organized by job-to-be-done, with real use cases for content creators, solopreneurs and small businesses."
+  }
+  </script>
+  <!-- Structured data: list of use-case pages -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Popular AI use cases",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Write & schedule social media posts","url":"https://toolbyjob.site/use-cases/social-posts.html"},
+      {"@type":"ListItem","position":2,"name":"Edit & repurpose short videos","url":"https://toolbyjob.site/use-cases/short-video.html"},
+      {"@type":"ListItem","position":3,"name":"Write product descriptions & ads","url":"https://toolbyjob.site/use-cases/product-copy.html"},
+      {"@type":"ListItem","position":4,"name":"Answer customer chats & emails","url":"https://toolbyjob.site/use-cases/customer-chat.html"},
+      {"@type":"ListItem","position":5,"name":"Create product photos & visuals","url":"https://toolbyjob.site/use-cases/product-photos.html"},
+      {"@type":"ListItem","position":6,"name":"Turn meetings into action items","url":"https://toolbyjob.site/use-cases/meeting-notes.html"},
+      {"@type":"ListItem","position":7,"name":"Build a simple landing page fast","url":"https://toolbyjob.site/use-cases/landing-page.html"},
+      {"@type":"ListItem","position":8,"name":"Research a topic with sources","url":"https://toolbyjob.site/use-cases/research.html"},
+      {"@type":"ListItem","position":9,"name":"Write email sequences & newsletters","url":"https://toolbyjob.site/use-cases/email-marketing.html"},
+      {"@type":"ListItem","position":10,"name":"Create AI voiceovers for videos","url":"https://toolbyjob.site/use-cases/voiceover.html"},
+      {"@type":"ListItem","position":11,"name":"Analyze competitors quickly","url":"https://toolbyjob.site/use-cases/competitor-research.html"},
+      {"@type":"ListItem","position":12,"name":"Handle simple admin & invoices","url":"https://toolbyjob.site/use-cases/invoice-admin.html"}
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .lang-zh { display: none; }
+    html[lang="zh"] .lang-en { display: none; }
+    html[lang="zh"] .lang-zh { display: inline; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="" class="flex items-center gap-2 font-bold text-xl text-brand-700">
+        <span class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center text-sm">TJ</span>
+        <span>ToolByJob</span>
+      </a>
+      <nav id="nav-links" class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#use-cases" class="hover:text-brand-600"><span class="lang-en">Use Cases</span><span class="lang-zh">使用场景</span></a>
+        <a href="#tools" class="hover:text-brand-600"><span class="lang-en">Tools</span><span class="lang-zh">工具</span></a>
+        <a href="#sponsor" class="hover:text-brand-600"><span class="lang-en">Sponsor</span><span class="lang-zh">赞助</span></a>
+        <a href="about.html" class="hover:text-brand-600">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="lang-toggle" class="text-sm px-3 py-1.5 rounded-full border border-slate-300 hover:bg-slate-100">
+          <span class="lang-en">中文</span><span class="lang-zh">EN</span>
+        </button>
+        <button id="menu-btn" class="md:hidden text-slate-600 p-2" aria-label="Menu">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <a href="#submit" class="hidden sm:inline-flex text-sm bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700">
+          <span class="lang-en">Submit a Tool</span><span class="lang-zh">提交工具</span>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 py-3 flex flex-col gap-3 text-sm font-medium">
+      <a href="#use-cases" class="hover:text-brand-600"><span class="lang-en">Use Cases</span><span class="lang-zh">使用场景</span></a>
+      <a href="#tools" class="hover:text-brand-600"><span class="lang-en">Tools</span><span class="lang-zh">工具</span></a>
+      <a href="#sponsor" class="hover:text-brand-600"><span class="lang-en">Sponsor</span><span class="lang-zh">赞助</span></a>
+      <a href="about.html" class="hover:text-brand-600">About</a>
+      <a href="#submit" class="text-brand-600"><span class="lang-en">Submit a Tool</span><span class="lang-zh">提交工具</span></a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+        <span class="lang-en">What do you want to get done?</span>
+        <span class="lang-zh">你想完成什么事？</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+        <span class="lang-en">Tell us the job. We’ll show the best AI tools for content creators, solopreneurs and small businesses — with real use cases.</span>
+        <span class="lang-zh">告诉我们你的任务，我们为内容创作者、独立开发者和小企业推荐最合适的 AI 工具，并附真实使用场景。</span>
+      </p>
+
+      <div class="max-w-xl mx-auto">
+        <div class="relative">
+          <input id="search-input" type="text"
+            placeholder="e.g. write product descriptions, edit short videos, answer customer chats..."
+            class="w-full px-5 py-4 pr-28 rounded-2xl border border-slate-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-base"
+          >
+          <button id="search-btn" class="absolute right-2 top-2 bottom-2 px-5 bg-brand-600 text-white rounded-xl font-medium hover:bg-brand-700">
+            <span class="lang-en">Find tools</span><span class="lang-zh">找工具</span>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-500">
+          <span class="lang-en">Popular: </span><span class="lang-zh">热门：</span>
+          <button class="quick-search text-brand-600 hover:underline mx-1" data-q="social media posts"><span class="lang-en">social posts</span><span class="lang-zh">社交媒体</span></button>
+          <button class="quick-search text-brand-600 hover:underline mx-1" data-q="short video"><span class="lang-en">short videos</span><span class="lang-zh">短视频</span></button>
+          <button class="quick-search text-brand-600 hover:underline mx-1" data-q="customer support"><span class="lang-en">customer chat</span><span class="lang-zh">客服</span></button>
+          <button class="quick-search text-brand-600 hover:underline mx-1" data-q="product photo"><span class="lang-en">product photos</span><span class="lang-zh">产品图</span></button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases (static content for SEO; JS only filters) -->
+  <section id="use-cases" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+          <span class="lang-en">Popular Use Cases</span><span class="lang-zh">热门使用场景</span>
+        </h2>
+        <p class="text-slate-600 mt-1">
+          <span class="lang-en">Start with a real job instead of a long tool list.</span>
+          <span class="lang-zh">从真实任务出发，而不是从冗长的工具列表开始。</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="use-cases-grid">
+      <a href="use-cases/social-posts.html" data-keywords="social media posts content calendar schedule linkedin instagram xiaohongshu twitter 社交媒体 发帖 排期 内容日历 小红书" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Write & schedule social media posts</span><span class="lang-zh">写并安排社交媒体内容</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Turn one idea into platform-ready posts for X, LinkedIn, Xiaohongshu, Instagram.</span><span class="lang-zh">把一个想法变成适合 X、LinkedIn、小红书、Instagram 的成品内容。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Buffer</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Canva</span></div>
+      </a>
+      <a href="use-cases/short-video.html" data-keywords="short video edit repurpose shorts reels douyin tiktok captions 短视频 剪辑 抖音 切片 字幕 二创" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Edit & repurpose short videos</span><span class="lang-zh">剪辑短视频并二次创作</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Turn long recordings into vertical Shorts / Reels / Douyin clips with captions.</span><span class="lang-zh">把长视频变成竖版 Shorts / Reels / 抖音，并自动加字幕。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">CapCut</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">OpusClip</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Descript</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ElevenLabs</span></div>
+      </a>
+      <a href="use-cases/product-copy.html" data-keywords="product description ads copywriting headlines landing page ecommerce 产品文案 广告标题 电商 落地页" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Write product descriptions & ads</span><span class="lang-zh">写产品描述与广告文案</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Generate high-converting product copy, ad headlines and landing page text.</span><span class="lang-zh">生成高转化的产品文案、广告标题和落地页文字。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Jasper</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Copy.ai</span></div>
+      </a>
+      <a href="use-cases/customer-chat.html" data-keywords="customer support chat email agent helpdesk faq chatbot AI客服 智能客服 在线客服 工单 自动回复" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Answer customer chats & emails</span><span class="lang-zh">回复客户聊天与邮件</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">AI agents that handle common questions and escalate complex ones.</span><span class="lang-zh">AI 客服自动处理常见问题，复杂问题再转人工。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Tidio</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Intercom</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span></div>
+      </a>
+      <a href="use-cases/product-photos.html" data-keywords="product photo image visual design graphics midjourney canva 产品图 商品图 场景图 电商视觉 AI绘图" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Create product photos & visuals</span><span class="lang-zh">制作产品图与视觉素材</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Generate clean product shots, lifestyle images and social graphics.</span><span class="lang-zh">生成干净的产品图、场景图和社交媒体视觉。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Canva</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Midjourney</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Flux</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Adobe Firefly</span></div>
+      </a>
+      <a href="use-cases/meeting-notes.html" data-keywords="meeting notes transcript summary action items otter fathom 会议记录 会议纪要 转写 待办" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Turn meetings into action items</span><span class="lang-zh">把会议变成行动项</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Record, transcribe, summarize and extract tasks from calls.</span><span class="lang-zh">录音、转写、总结会议并提取待办事项。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Fathom</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Otter.ai</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Fireflies</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span></div>
+      </a>
+      <a href="use-cases/landing-page.html" data-keywords="landing page website no-code framer carrd validate 落地页 建站 无代码 验证想法" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Build a simple landing page fast</span><span class="lang-zh">快速做出落地页</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">From idea to live page in minutes for validation or campaigns.</span><span class="lang-zh">几分钟从想法变成可上线的落地页，用于验证或投放。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Framer</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Carrd</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">v0</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Lovable</span></div>
+      </a>
+      <a href="use-cases/research.html" data-keywords="research sources citations perplexity fact check 调研 带引用 事实核查 市场研究" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Research a topic with sources</span><span class="lang-zh">带信源地研究一个主题</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Get answers with citations instead of pure generation.</span><span class="lang-zh">拿到带引用的答案，而不是纯生成内容。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Perplexity</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Gemini</span></div>
+      </a>
+      <a href="use-cases/email-marketing.html" data-keywords="email sequence newsletter marketing beehiiv mailchimp 邮件营销 欢迎邮件 邮件序列" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Write email sequences & newsletters</span><span class="lang-zh">写邮件序列与 Newsletter</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Draft welcome sequences, promotions and weekly newsletters that convert.</span><span class="lang-zh">撰写欢迎序列、促销邮件和每周 Newsletter。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Beehiiv</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Mailchimp</span></div>
+      </a>
+      <a href="use-cases/voiceover.html" data-keywords="voiceover narration ai voice elevenlabs clone 配音 语音合成 旁白 文字转语音 声音克隆" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Create AI voiceovers for videos</span><span class="lang-zh">为视频生成 AI 配音</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Generate natural-sounding narration in multiple languages.</span><span class="lang-zh">生成自然的多语言旁白与配音。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ElevenLabs</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Descript</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Murf</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">PlayHT</span></div>
+      </a>
+      <a href="use-cases/competitor-research.html" data-keywords="competitor analysis research market positioning 竞品分析 市场调研 竞争对手 定位" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Analyze competitors quickly</span><span class="lang-zh">快速分析竞争对手</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Summarize competitor positioning, content and offers.</span><span class="lang-zh">总结竞争对手的定位、内容和产品。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Perplexity</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Similarweb</span></div>
+      </a>
+      <a href="use-cases/invoice-admin.html" data-keywords="invoice admin bookkeeping accounting small business 发票 记账 行政 小企业财务 催款" class="uc-card block bg-white border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition group">
+        <h3 class="font-semibold text-lg text-slate-900 group-hover:text-brand-700 mb-2"><span class="lang-en">Handle simple admin & invoices</span><span class="lang-zh">处理简单行政与发票</span></h3>
+        <p class="text-sm text-slate-600 mb-4"><span class="lang-en">Draft invoices, follow-ups and basic bookkeeping notes.</span><span class="lang-zh">起草发票、跟进邮件和基础记账备注。</span></p>
+        <div class="flex flex-wrap gap-1.5"><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">ChatGPT</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Claude</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">QuickBooks</span><span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md">Notion</span></div>
+      </a>
+    </div>
+
+    <!-- No-results fallback -->
+    <div id="no-results" class="hidden bg-white border border-dashed border-slate-300 rounded-2xl p-8 text-center mt-2">
+      <p class="text-slate-700 font-medium mb-1">
+        <span class="lang-en">No match for “<span id="no-results-q"></span>” — yet.</span>
+        <span class="lang-zh">还没有匹配「<span id="no-results-q"></span>」的场景。</span>
+      </p>
+      <p class="text-sm text-slate-500 mb-4">
+        <span class="lang-en">Tell us what you are trying to do. Your request helps us decide what to add next.</span>
+        <span class="lang-zh">告诉我们你想做什么，你的需求会决定我们下一步收录什么。</span>
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfevyDWuX-ugf9I2hlEuirnsEURypgsCTCbylm5nqFuiGnjFg/viewform" target="_blank" rel="noopener" class="inline-flex bg-brand-600 text-white px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-brand-700">
+        <span class="lang-en">Request a use case</span><span class="lang-zh">提交我的需求</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Tools (static content for SEO) -->
+  <section id="tools" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+        <span class="lang-en">Featured Tools</span><span class="lang-zh">精选工具</span>
+      </h2>
+      <p class="text-slate-600 mb-8">
+        <span class="lang-en">Hand-picked for creators and small teams. Sponsored placements available.</span>
+        <span class="lang-zh">为创作者和小团队精选。支持赞助位。</span>
+      </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="tools-grid">
+        <a href="https://chatgpt.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64" alt="ChatGPT logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">ChatGPT</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Assistant</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">All-round writing, brainstorming and light coding.</span><span class="lang-zh">全能写作、头脑风暴和轻度编程。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/social-posts.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">social posts</a><a href="use-cases/product-copy.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">product copy</a><a href="use-cases/research.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">research</a></div>
+        </a>
+        <a href="https://claude.ai" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=64" alt="Claude logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Claude</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Assistant</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Excellent long-form writing and careful reasoning.</span><span class="lang-zh">优秀的长文写作与细致推理。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/social-posts.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">social posts</a><a href="use-cases/meeting-notes.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">meeting notes</a><a href="use-cases/email-marketing.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">newsletters</a></div>
+        </a>
+        <a href="https://canva.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="Canva logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Canva</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Design</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Design + AI graphics for social and marketing.</span><span class="lang-zh">设计 + AI 图像，适合社交与营销。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/product-photos.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">product photos</a><a href="use-cases/social-posts.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">social posts</a></div>
+        </a>
+        <a href="https://capcut.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=64" alt="CapCut logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">CapCut</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Video</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Fast short-form video editing with strong free tier.</span><span class="lang-zh">快速短视频剪辑，免费额度不错。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/short-video.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">short video</a></div>
+        </a>
+        <a href="https://opus.pro" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=opus.pro&sz=64" alt="OpusClip logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">OpusClip</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Video</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Auto-turn long videos into viral short clips.</span><span class="lang-zh">自动把长视频切成有潜力的短片段。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/short-video.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">short video</a></div>
+        </a>
+        <a href="https://descript.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=descript.com&sz=64" alt="Descript logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Descript</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Video/Audio</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Edit video and podcasts by editing the transcript.</span><span class="lang-zh">通过编辑文字稿来剪视频和播客。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/short-video.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">short video</a><a href="use-cases/voiceover.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">voiceover</a></div>
+        </a>
+        <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=64" alt="ElevenLabs logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">ElevenLabs</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Audio</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">High-quality AI voices and voice cloning.</span><span class="lang-zh">高质量 AI 语音与声音克隆。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/voiceover.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">voiceover</a><a href="use-cases/short-video.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">short video</a></div>
+        </a>
+        <a href="https://perplexity.ai" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=64" alt="Perplexity logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Perplexity</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Research</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Answers with real sources and citations.</span><span class="lang-zh">带真实来源与引用的问答。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/research.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">research</a><a href="use-cases/competitor-research.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">competitors</a></div>
+        </a>
+        <a href="https://tidio.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=tidio.com&sz=64" alt="Tidio logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Tidio</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Support</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Live chat + AI agent for small business sites.</span><span class="lang-zh">网站在线客服 + AI 代理。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/customer-chat.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">customer chat</a></div>
+        </a>
+        <a href="https://buffer.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=buffer.com&sz=64" alt="Buffer logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Buffer</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Social</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Plan, write and schedule posts across platforms.</span><span class="lang-zh">规划、撰写并跨平台发布内容。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/social-posts.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">social posts</a></div>
+        </a>
+        <a href="https://fathom.video" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=fathom.video&sz=64" alt="Fathom logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Fathom</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Free</span></div>
+          <p class="text-xs text-slate-500 mb-2">Productivity</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Free AI meeting notetaker that just works.</span><span class="lang-zh">免费好用的 AI 会议记录工具。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/meeting-notes.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">meeting notes</a></div>
+        </a>
+        <a href="https://framer.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=framer.com&sz=64" alt="Framer logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Framer</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">No-code</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Beautiful sites and landing pages with AI help.</span><span class="lang-zh">用 AI 帮助做出漂亮的网站与落地页。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/landing-page.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">landing page</a></div>
+        </a>
+        <a href="https://jasper.ai" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=jasper.ai&sz=64" alt="Jasper logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Jasper</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Paid</span></div>
+          <p class="text-xs text-slate-500 mb-2">Writing</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Marketing-focused AI writer with brand voice.</span><span class="lang-zh">面向营销的 AI 写作工具，支持品牌声音。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/product-copy.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">product copy</a></div>
+        </a>
+        <a href="https://midjourney.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=64" alt="Midjourney logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Midjourney</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Paid</span></div>
+          <p class="text-xs text-slate-500 mb-2">Image</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">High-quality AI image generation via Discord.</span><span class="lang-zh">高质量 AI 图像生成（Discord）。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/product-photos.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">product photos</a></div>
+        </a>
+        <a href="https://notion.so" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=notion.so&sz=64" alt="Notion AI logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Notion AI</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Productivity</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">AI inside your notes and knowledge base.</span><span class="lang-zh">笔记与知识库内置 AI。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/meeting-notes.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">meeting notes</a><a href="use-cases/invoice-admin.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">admin</a></div>
+        </a>
+        <a href="https://zapier.com" target="_blank" rel="noopener" class="block bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-300 hover:shadow-md transition">
+          <div class="flex items-start justify-between mb-2"><div class="flex items-center gap-2.5"><img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=64" alt="Zapier logo" width="24" height="24" class="rounded" loading="lazy"><h3 class="font-semibold text-lg text-slate-900">Zapier</h3></div><span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">Freemium</span></div>
+          <p class="text-xs text-slate-500 mb-2">Automation</p>
+          <p class="text-sm text-slate-600"><span class="lang-en">Connect apps and automate workflows without code.</span><span class="lang-zh">无代码连接应用并自动化工作流。</span></p>
+          <div class="flex flex-wrap gap-1.5 mt-3"><a href="use-cases/email-marketing.html" class="text-xs bg-white border border-slate-200 text-brand-700 px-2 py-1 rounded-md hover:border-brand-300">email marketing</a></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsor CTA + pricing -->
+  <section id="sponsor" class="max-w-4xl mx-auto px-4 py-16">
+    <div class="bg-brand-50 border border-brand-100 rounded-3xl p-8 md:p-12 text-center">
+      <h2 class="text-2xl font-bold text-slate-900 mb-3">
+        <span class="lang-en">Get your AI tool in front of the right people</span>
+        <span class="lang-zh">让你的 AI 工具被精准用户看到</span>
+      </h2>
+      <p class="text-slate-600 mb-8 max-w-xl mx-auto">
+        <span class="lang-en">Sponsored placements by use case. High-intent visitors looking for tools that solve specific jobs.</span>
+        <span class="lang-zh">按使用场景售卖赞助位。高意向用户正在寻找能解决具体任务的工具。</span>
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-4 text-left mb-8">
+        <div class="bg-white border border-slate-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-1"><span class="lang-en">Use-case page</span><span class="lang-zh">场景页赞助</span></h3>
+          <p class="text-2xl font-bold text-brand-700 mb-2">$49<span class="text-sm font-normal text-slate-500">/mo</span></p>
+          <p class="text-xs text-slate-500"><span class="lang-en">Your tool featured on one use-case page with a "why it fits" note.</span><span class="lang-zh">你的工具在一个场景页置顶展示，附推荐理由。</span></p>
+        </div>
+        <div class="bg-white border-2 border-brand-300 rounded-2xl p-5 relative">
+          <span class="absolute -top-3 left-4 text-xs bg-brand-600 text-white px-2 py-0.5 rounded-full"><span class="lang-en">Popular</span><span class="lang-zh">热门</span></span>
+          <h3 class="font-semibold text-slate-900 mb-1"><span class="lang-en">Homepage featured</span><span class="lang-zh">首页精选位</span></h3>
+          <p class="text-2xl font-bold text-brand-700 mb-2">$99<span class="text-sm font-normal text-slate-500">/mo</span></p>
+          <p class="text-xs text-slate-500"><span class="lang-en">Top of Featured Tools on the homepage + one use-case page.</span><span class="lang-zh">首页精选工具置顶 + 一个场景页展示。</span></p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-1"><span class="lang-en">Launch bundle</span><span class="lang-zh">发布套餐</span></h3>
+          <p class="text-2xl font-bold text-brand-700 mb-2">$199<span class="text-sm font-normal text-slate-500">/mo</span></p>
+          <p class="text-xs text-slate-500"><span class="lang-en">Homepage + 3 use-case pages + a dedicated review article.</span><span class="lang-zh">首页 + 3 个场景页 + 一篇独立评测。</span></p>
+        </div>
+      </div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi4QRQ7ksyDJnNCcfItG0RFXuF2D5mHNPAijXOe_AoV2MLcg/viewform" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-brand-700">
+        <span class="lang-en">Talk about sponsorship</span><span class="lang-zh">咨询赞助</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Submit -->
+  <section id="submit" class="bg-slate-100">
+    <div class="max-w-xl mx-auto px-4 py-16 text-center">
+      <h2 class="text-2xl font-bold mb-3">
+        <span class="lang-en">Submit a Tool</span><span class="lang-zh">提交工具</span>
+      </h2>
+      <p class="text-slate-600 mb-6">
+        <span class="lang-en">Free basic listing. We review every submission.</span>
+        <span class="lang-zh">基础上架免费，我们会人工审核每一条提交。</span>
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfevyDWuX-ugf9I2hlEuirnsEURypgsCTCbylm5nqFuiGnjFg/viewform" target="_blank" rel="noopener" class="inline-flex bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800">
+        <span class="lang-en">Email us your tool</span><span class="lang-zh">邮件提交工具</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div>© 2026 ToolByJob. <span class="lang-en">Built for people who ship.</span><span class="lang-zh">为真正做事的人而建。</span></div>
+      <div class="flex gap-4">
+        <a href="about.html" class="hover:text-brand-600">About</a>
+        <a href="privacy.html" class="hover:text-brand-600"><span class="lang-en">Privacy</span><span class="lang-zh">隐私</span></a>
+        <a href="terms.html" class="hover:text-brand-600"><span class="lang-en">Terms</span><span class="lang-zh">条款</span></a>
+        <!-- TODO: replace with your real X/Twitter profile URL -->
+        <a href="#" class="hover:text-brand-600">Twitter / X</a>
+        <a href="#sponsor" class="hover:text-brand-600"><span class="lang-en">Sponsor</span><span class="lang-zh">赞助</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Analytics placeholder: sign up at plausible.io (or use GA4), then uncomment.
+       Plausible recommended: lightweight, no cookie banner needed.
+  <script defer data-domain="toolbyjob.site" src="https://plausible.io/js/script.js"></script>
+  -->
+
+  <script>
+    // Language toggle
+    const html = document.documentElement;
+    const langToggle = document.getElementById('lang-toggle');
+    langToggle.addEventListener('click', () => {
+      const next = html.lang === 'zh' ? 'en' : 'zh';
+      html.lang = next;
+      localStorage.setItem('lang', next);
+    });
+    const saved = localStorage.getItem('lang');
+    if (saved) html.lang = saved;
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Search: tokenized matching over card text + data-keywords (EN + ZH)
+    const ucGrid = document.getElementById('use-cases-grid');
+    const cards = Array.from(ucGrid.querySelectorAll('.uc-card'));
+    const noResults = document.getElementById('no-results');
+    const noResultsQ = document.getElementById('no-results-q');
+
+    // simple synonyms so "video editing" matches "edit video", "剪辑" etc.
+    const SYNONYMS = {
+      'editing':'edit','edited':'edit','剪辑':'edit','影片':'video','视频':'video',
+      'client':'customer','客户':'customer','聊天':'chat','客服':'customer support',
+      '写作':'write','文案':'copywriting','图片':'photo','图像':'photo','图片':'photo',
+      '照片':'photo','图':'photo','会议':'meeting','调研':'research','研究':'research',
+      '竞品':'competitor','竞争对手':'competitor','发票':'invoice','记账':'bookkeeping',
+      '邮件':'email','配音':'voiceover','建站':'landing page','落地页':'landing page',
+      '网页':'landing page','发布':'schedule','排期':'schedule','自动化':'automation'
+    };
+
+    function tokenize(q) {
+      const raw = q.toLowerCase().split(/[\s,，。、;；]+/).filter(Boolean);
+      const out = new Set(raw);
+      raw.forEach(t => { if (SYNONYMS[t]) out.add(SYNONYMS[t]); });
+      return Array.from(out);
+    }
+
+    function cardMatches(card, tokens) {
+      const haystack = (card.textContent + ' ' + (card.dataset.keywords || '')).toLowerCase();
+      // match if ANY token hits (OR logic) — more forgiving than substring
+      return tokens.some(t => haystack.includes(t));
+    }
+
+    function filterUseCases(query) {
+      const q = (query || '').trim();
+      const tokens = tokenize(q);
+      let visible = 0;
+      cards.forEach(card => {
+        const match = !tokens.length || cardMatches(card, tokens);
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      if (tokens.length) {
+        noResultsQ.textContent = q;
+        noResults.classList.toggle('hidden', visible > 0);
+        document.getElementById('use-cases').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    document.getElementById('search-btn').addEventListener('click', () => {
+      filterUseCases(document.getElementById('search-input').value);
+    });
+    document.getElementById('search-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') filterUseCases(e.target.value);
+    });
+    document.querySelectorAll('.quick-search').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('search-input').value = btn.dataset.q;
+        filterUseCases(btn.dataset.q);
+      });
+    });
+  </script>
+</body>
+</html>

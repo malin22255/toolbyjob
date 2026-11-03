@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found – ToolByJob</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: {
+      50:'#f0f9ff',100:'#e0f2fe',500:'#0ea5e9',600:'#0284c7',700:'#0369a1',900:'#0c4a6e'
+    }}}}};
+  </script>
+  <style>
+    .lang-zh { display: none; }
+    html[lang="zh"] .lang-en { display: none; }
+    html[lang="zh"] .lang-zh { display: inline; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <main class="min-h-screen flex items-center justify-center px-4">
+    <div class="text-center max-w-lg">
+      <p class="text-7xl font-bold text-brand-600 mb-4">404</p>
+      <h1 class="text-2xl font-bold text-slate-900 mb-3">
+        <span class="lang-en">This page went off the job.</span>
+        <span class="lang-zh">这个页面开小差去了。</span>
+      </h1>
+      <p class="text-slate-600 mb-6">
+        <span class="lang-en">The page you’re looking for doesn’t exist (yet). Head back home and tell us what you want to get done instead.</span>
+        <span class="lang-zh">你要找的页面还不存在。回首页告诉我们你想完成什么任务吧。</span>
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="" class="inline-flex bg-brand-600 text-white px-5 py-2.5 rounded-xl font-medium hover:bg-brand-700">
+          <span class="lang-en">← Back to home</span><span class="lang-zh">← 返回首页</span>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfevyDWuX-ugf9I2hlEuirnsEURypgsCTCbylm5nqFuiGnjFg/viewform" target="_blank" rel="noopener" class="inline-flex border border-slate-300 bg-white text-slate-700 px-5 py-2.5 rounded-xl font-medium hover:bg-slate-100">
+          <span class="lang-en">Request a use case</span><span class="lang-zh">提交我的需求</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script>
+    const html = document.documentElement;
+    const saved = localStorage.getItem('lang');
+    if (saved) html.lang = saved;
+  </script>
+</body>
+</html>
