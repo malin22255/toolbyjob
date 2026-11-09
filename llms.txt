@@ -1,0 +1,29 @@
+# ToolByJob
+
+> AI tool recommendations organized by job-to-be-done, not by tool category. Each use-case page recommends 5 hand-picked tools (2 established + 3 underrated) with real reasons, pricing, free-tier details, and a step-by-step workflow. Independently picked; sponsored placements are separate from editorial recommendations.
+
+Site: https://toolbyjob.site/
+Language: English and Chinese (language toggle on every page)
+Owner: ToolByJob
+Contact: via the submit or sponsorship forms linked from every page
+
+## Use-case guides
+
+- [Write & schedule social media posts](https://toolbyjob.site/use-cases/social-posts.html): Turn one idea into platform-ready posts; Buffer, ChatGPT, Typefully, Hypefury, Metricool.
+- [Edit & repurpose short videos](https://toolbyjob.site/use-cases/short-video.html): Long video to Shorts/Reels/Douyin with captions; CapCut, OpusClip, Submagic, Klap, Vizard.
+- [Write product descriptions & ads](https://toolbyjob.site/use-cases/product-copy.html): High-converting ecommerce and ad copy; ChatGPT, Jasper, Describely, Anyword, Rytr.
+- [Answer customer chats & emails](https://toolbyjob.site/use-cases/customer-chat.html): AI agents for support with human escalation; Tidio, Intercom, Chatbase, Wonderchat, My AskAI.
+- [Create product photos & visuals](https://toolbyjob.site/use-cases/product-photos.html): Product shots and lifestyle scenes without a studio; Canva, Photoroom, Pebblely, Flair.ai, Midjourney.
+- [Turn meetings into action items](https://toolbyjob.site/use-cases/meeting-notes.html): Record, transcribe, extract tasks; Fathom, Otter.ai, tl;dv, Tactiq, Granola.
+- [Build a simple landing page fast](https://toolbyjob.site/use-cases/landing-page.html): Idea to live page in minutes; Framer, Carrd, Umso, Durable, Lovable.
+- [Research a topic with sources](https://toolbyjob.site/use-cases/research.html): Cited answers and literature reviews; Perplexity, ChatGPT, Elicit, Consensus, NotebookLM.
+- [Write email sequences & newsletters](https://toolbyjob.site/use-cases/email-marketing.html): Welcome sequences and weekly newsletters; Beehiiv, Mailchimp, Kit, Buttondown, MailerLite.
+- [Create AI voiceovers for videos](https://toolbyjob.site/use-cases/voiceover.html): Natural narration in many languages; ElevenLabs, Murf, Lovo, Speechify, Resemble AI.
+- [Analyze competitors quickly](https://toolbyjob.site/use-cases/competitor-research.html): Positioning, pricing and traffic analysis; Perplexity, Similarweb, SpyFu, Visualping, Owler.
+- [Handle simple admin & invoices](https://toolbyjob.site/use-cases/invoice-admin.html): Invoices, reminders, light bookkeeping; ChatGPT, QuickBooks, Bonsai, Invoice Ninja, Zoho Invoice.
+
+## Key facts
+
+- Every tool's free tier and starting price is manually verified (November 2026).
+- Each guide includes a budget pick and a scale-up pick, a 3-step workflow with tools bound to each step, and an FAQ.
+- Tools are editorially recommended; paid sponsorships are labeled separately and never change recommendations.
